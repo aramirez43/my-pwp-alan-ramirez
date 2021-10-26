@@ -1,0 +1,16 @@
+
+#alanPortrait {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.jumboFlex {
+    display: -webkit-flex;
+    flex-direction: row;
+}
+
+.name-work {
+    margin-left: 1rem;
+    margin-top: 3rem;
+}
