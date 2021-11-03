@@ -14,3 +14,22 @@
     margin-left: 1rem;
     margin-top: 3rem;
 }
+
+.aboutMe {
+    text-align: left;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.skillImages {
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+#skillsHead {
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
