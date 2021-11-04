@@ -1,5 +1,10 @@
 
 /*Jumbotron/About Me*/
+
+#jumboColor {
+    background-color: #20c997;
+}
+
 #alanPortrait {
     height: 200px;
     width: 200px;

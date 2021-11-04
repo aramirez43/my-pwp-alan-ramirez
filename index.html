@@ -30,7 +30,7 @@
 
 <!--Jumbotron/About Me-->
 <section>
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid" id="jumboColor">
         <div class="container">
             <div class="jumboFlex">
                 <img src="Images/alanPortrait.jpg" alt="portrait" id="alanPortrait">
@@ -92,23 +92,23 @@
         <div class="row g-3">
             <div class="col-md-6">
                 <label for="inputName" class="form-label">Full Name</label>
-                <input type="text" id="inputName" class="form-control">
+                <input type="text" id="inputName" class="form-control" required>
             </div>
             <div class="col-md-6">
                 <label for="inputNumber" class="form-label">Phone Number</label>
-                <input type="number" id="inputNumber" class="form-control">
+                <input type="number" id="inputNumber" class="form-control" required>
             </div>
             <div class="col-md-6">
                 <label for="inputEmail" class="form-label">Email</label>
-                <input type="email" id="inputEmail" class="form-control">
+                <input type="email" id="inputEmail" class="form-control" required>
             </div>
             <div class="col-md-6">
                 <label for="inputSubject" class="form-label">Subject</label>
-                <input type="text" id="inputSubject" class="form-control">
+                <input type="text" id="inputSubject" class="form-control" required>
             </div>
             <div class="col-md-12">
                 <label for="inputMessage" class="form-label">Message</label>
-                <textarea class="form-control" id="inputMessage" rows="3"></textarea>
+                <textarea class="form-control" id="inputMessage" rows="3" required></textarea>
             </div>
             <div class="col-md-12 my-3">
                 <button class="btn btn-primary" type="submit">Submit</button>
