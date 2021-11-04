@@ -13,29 +13,30 @@
 
 <!--Navbar-->
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Alan Ramirez</a>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" id="scrollID">
+        <a class="navbar-brand" href="#jumboHeader">Alan Ramirez</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Skills<span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Work</a>
-                <a class="nav-item nav-link" href="#">Contact Me</a>
+                <a class="nav-item nav-link active" href="#skillsHead">Skills<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#workHead">Work</a>
+                <a class="nav-item nav-link" href="#contactHead">Contact Me</a>
             </div>
         </div>
     </nav>
 </header>
 
+<div data-spy="scroll" data-target="#scrollID" data-offset="0">
 <!--Jumbotron/About Me-->
 <section>
     <div class="jumbotron jumbotron-fluid" id="jumboColor">
         <div class="container">
             <div class="jumboFlex">
-                <img src="Images/alanPortrait.jpg" alt="portrait" id="alanPortrait">
+                <img src="../Images/alanPortrait.jpg" alt="portrait" id="alanPortrait">
                 <div class="name-work">
-                    <h1 class="md-4">Alan Ramirez</h1>
+                    <h1 class="md-4" id="jumboHeader">Alan Ramirez</h1>
                     <p>Fullstack Web Developer</p>
                 </div>
             </div>
@@ -58,35 +59,35 @@
         <div class="skill container">
             <div class="row">
                 <div class="col-md-3">
-                    <img class="skillImages" src="Images/html2.png" alt="htmlPic">
+                    <img class="skillImages" src="../Images/html2.png" alt="htmlPic">
                     <p>Example fo a new paragraph</p>
                 </div>
                 <div class="col-md-3">
-                    <img class="skillImages" src="Images/js2.png" alt="jsPic">
+                    <img class="skillImages" src="../Images/js2.png" alt="jsPic">
                     <p>Example fo a new paragraph</p>
                 </div>
                 <div class="col-md-3">
-                    <img class="skillImages" src="Images/css2.png" alt="cssPic">
+                    <img class="skillImages" src="../Images/css2.png" alt="cssPic">
                     <p>Example fo a new paragraph</p>
                 </div>
                 <div class="col-md-3">
-                    <img class="skillImages" src="Images/reactImg.png" alt="reactPic">
+                    <img class="skillImages" src="../Images/reactImg.png" alt="reactPic">
                     <p>Example fo a new paragraph</p>
                 </div>
                 <div class="col-md-3">
-                    <img class="skillImages" src="Images/photoshopLogo.png" alt="photoshopPic">
+                    <img class="skillImages" src="../Images/photoshopLogo.png" alt="photoshopPic">
                     <p>Example fo a new paragraph</p>
                 </div>
                 <div class="col-md-3">
-                    <img class="skillImages" src="Images/indseignLogo.png" alt="indesignPic">
+                    <img class="skillImages" src="../Images/indseignLogo.png" alt="indesignPic">
                     <p>Example fo a new paragraph</p>
                 </div>
                 <div class="col-md-3">
-                    <img class="skillImages" src="Images/illustratorLogo.png" alt="illustratorPic">
+                    <img class="skillImages" src="../Images/illustratorLogo.png" alt="illustratorPic">
                     <p>Example fo a new paragraph</p>
                 </div>
                 <div class="col-md-3">
-                    <img class="skillImages" src="Images/bootstrapLogo.png" alt="bootstrapPic">
+                    <img class="skillImages" src="../Images/bootstrapLogo.png" alt="bootstrapPic">
                     <p>Example fo a new paragraph</p>
                 </div>
             </div>
@@ -95,7 +96,7 @@
 
 <!--Past Works-->
 <section>
-    <h2>Work</h2>
+    <h2 id="workHead">Work</h2>
     <div>
 
     </div>
@@ -104,35 +105,51 @@
 <!--Contact Form-->
 <section>
     <h2 class="my-3" id="contactHead">Contact Me</h2>
-    <form class="container">
+    <form class="container" action="./apis/" id="contact" method="post" novalidate>
         <div class="row g-3">
             <div class="col-md-6">
-                <label for="inputName" class="form-label">Full Name</label>
-                <input type="text" id="inputName" class="form-control" required>
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" id="name" name="name" class="form-control">
             </div>
             <div class="col-md-6">
-                <label for="inputNumber" class="form-label">Phone Number</label>
-                <input type="number" id="inputNumber" class="form-control" required>
+                <label for="number" class="form-label">Phone Number</label>
+                <input type="text" id="number" name="number" class="form-control">
             </div>
             <div class="col-md-6">
-                <label for="inputEmail" class="form-label">Email</label>
-                <input type="email" id="inputEmail" class="form-control" required>
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-control">
             </div>
             <div class="col-md-6">
-                <label for="inputSubject" class="form-label">Subject</label>
-                <input type="text" id="inputSubject" class="form-control" required>
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-control">
             </div>
             <div class="col-md-12">
-                <label for="inputMessage" class="form-label">Message</label>
-                <textarea class="form-control" id="inputMessage" rows="3" required></textarea>
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="3"></textarea>
             </div>
             <div class="col-md-12 my-3">
                 <button class="btn btn-primary" type="submit">Submit</button>
             </div>
         </div>
     </form>
+
+    <!--Output-Area-->
+    <div id="output-area"></div>
 </section>
 
+</div>
+
+
+<!--Bootstrap Script-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<!--Jquery Script-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js" integrity="sha512-XZEy8UQ9rngkxQVugAdOuBRDmJ5N4vCuNXCh8KlniZgDKTvf7zl75QBtaVG1lEhMFe2a2DuA22nZYY+qsI2/xA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!--My Script-->
+<script src="script.js"></script>
 
 </body>
 

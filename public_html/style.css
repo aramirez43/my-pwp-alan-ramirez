@@ -1,6 +1,10 @@
 
 /*Jumbotron/About Me*/
 
+.navbar {
+    position: sticky;
+}
+
 #jumboColor {
     background-color: #20c997;
 }
