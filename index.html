@@ -11,6 +11,7 @@
 
 <body>
 
+<!--Navbar-->
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Alan Ramirez</a>
@@ -27,6 +28,7 @@
     </nav>
 </header>
 
+<!--Jumbotron/About Me-->
 <section>
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
@@ -50,28 +52,69 @@
     </div>
 </section>
 
+<!--Skills Languages-->
 <section>
     <h2 id="skillsHead">Skills</h2>
         <div class="skill container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-md-3">
                     <img class="skillImages" src="Images/html2.png" alt="htmlPic">
                     <p>Example fo a new paragraph</p>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3">
                     <img class="skillImages" src="Images/js2.png" alt="jsPic">
                     <p>Example fo a new paragraph</p>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3">
                     <img class="skillImages" src="Images/css2.png" alt="cssPic">
                     <p>Example fo a new paragraph</p>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3">
                     <img class="skillImages" src="Images/reactImg.png" alt="reactPic">
                     <p>Example fo a new paragraph</p>
                 </div>
             </div>
         </div>
+</section>
+
+<!--Past Works-->
+<section>
+    <h2>Work</h2>
+    <div>
+
+    </div>
+</section>
+
+<!--Contact Form-->
+<section>
+    <h2 class="my-3" id="contactHead">Contact Me</h2>
+    <form class="container">
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="inputName" class="form-label">Full Name</label>
+                <input type="text" id="inputName" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <label for="inputNumber" class="form-label">Phone Number</label>
+                <input type="number" id="inputNumber" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="email" id="inputEmail" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <label for="inputSubject" class="form-label">Subject</label>
+                <input type="text" id="inputSubject" class="form-control">
+            </div>
+            <div class="col-md-12">
+                <label for="inputMessage" class="form-label">Message</label>
+                <textarea class="form-control" id="inputMessage" rows="3"></textarea>
+            </div>
+            <div class="col-md-12 my-3">
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
 </section>
 
 

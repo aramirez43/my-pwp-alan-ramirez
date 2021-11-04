@@ -1,4 +1,5 @@
 
+/*Jumbotron/About Me*/
 #alanPortrait {
     height: 200px;
     width: 200px;
@@ -21,6 +22,8 @@
     margin: 0 auto;
 }
 
+/*Skills Languages*/
+
 .skillImages {
     height: 200px;
     display: block;
@@ -33,3 +36,12 @@
     margin-top: 3rem;
 }
 
+/*Contact Form*/
+
+#contactHead {
+    text-align: center;
+}
+
+form {
+    max-width: 50rem;
+}
