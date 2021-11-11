@@ -97,7 +97,7 @@ figure {
         grid-gap: 1em;
     }
     .project:nth-child(1) {
-        grid-column: 1/ span 3;
+        grid-column: 1 / span 3;
     }
     .project {
         width: 100%;
@@ -112,7 +112,7 @@ figure {
     .project figure img {
         position: relative;
         z-index: 999;
-        transition: tranform 0.4s;
+        transition: transform 0.4s;
     }
     .project figure:hover img {
         transform: translateY(-90px);
