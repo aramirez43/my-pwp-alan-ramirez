@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+.body {
+    font-family: "Roboto Light", "serif";
+}
+
 
 /*Jumbotron/About Me*/
+
 
 .navbar {
     position: sticky;
@@ -7,6 +14,14 @@
 
 #jumboColor {
     background-color: #20c997;
+}
+
+#jumboHeader {
+    font-size: 4rem;
+}
+
+#jumboSub {
+    font-size: 2rem;
 }
 
 #alanPortrait {
@@ -25,10 +40,16 @@
     margin-top: 3rem;
 }
 
+#aboutHead {
+    font-size: 3rem;
+}
+
 .aboutMe {
     text-align: left;
     max-width: 1080px;
     margin: 0 auto;
+    border: black solid 5px;
+    padding: 3rem;
 }
 
 /*Skills Languages*/
@@ -43,11 +64,26 @@
     text-align: center;
     margin-bottom: 3rem;
     margin-top: 3rem;
+    font-size: 3rem;
+}
+
+.col-md-3 {
+    margin-bottom: 2rem;
 }
 
 /*Css Grid*/
 
+#workHead {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
+
 .grid-section {
+    line-height: 1.3;
+    margin: 0 0 4em;
+
 
 }
 
@@ -73,7 +109,7 @@ figure {
 
 .project figcaption {
     padding: 1em;
-    background: black;
+    background: #20c997;
     color: white;
 }
 
@@ -131,6 +167,7 @@ figure {
 
 #contactHead {
     text-align: center;
+    font-size: 3rem;
 }
 
 form {
