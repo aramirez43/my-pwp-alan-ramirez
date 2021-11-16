@@ -28,7 +28,7 @@ app.use(bodyParser.json())
 const indexRoute = express.Router()
 
 const handleGetRequest = (req, res) => {
-    return res.json("The express server is live 😼")
+    return res.json("The express server is live")
 }
 
 const handlePostRequest = (req, res) => {
@@ -60,7 +60,7 @@ const handlePostRequest = (req, res) => {
     mg.messages.create(process.env.MAILGUN_DOMAIN, mailgunData)
         .then(msg =>
             res.send(
-                `<div class='alert alert-success' role='alert'>${JSON.stringify(msg)}</div>`
+                `<div class='alert alert-success' role='alert'>Email Sent</div>`
             )
         )
         .catch(err =>
